@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-620ihd+tg!$=b-mpi_wf-#b5k8fn&ik-r5j4(vtuf%gb)qv*#*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -78,16 +78,16 @@ WSGI_APPLICATION = 'book_review.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'book',
-#         'HOST': 'localhost',
-#         'USER': 'postgres',
-#         'PASSWORD': 'pgAdmin'
-#         # 'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'book',
+        'HOST': 'localhost',
+        'USER': 'postgres',
+        'PASSWORD': 'pgAdmin'
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 AUTH_USER_MODEL = "home.User"
 
