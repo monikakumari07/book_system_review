@@ -1,5 +1,4 @@
 {
-    
     "builds": [
       {
         "src": "book_review/wsgi.py",
@@ -25,3 +24,4 @@
       }
     ]
   }
+  
